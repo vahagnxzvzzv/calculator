@@ -258,6 +258,7 @@ namespace calculator
             this.textBox_Result.TabIndex = 20;
             this.textBox_Result.Text = "0";
             this.textBox_Result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox_Result.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_Result_KeyPress);
             // 
             // Form1
             // 
@@ -289,6 +290,7 @@ namespace calculator
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
